@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>My Title</title>
+	<style>
+		h1{
+			color:red;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+
+	@RenderSection("my_style",required:false)
+
+
+</head>
+<body>
+
+		@RenderSection("before_ul",required:false)
+
+
+	<ul>
+		<li><a href="default.asp">Home</a></li>
+		<li><a href="news.asp">News</a></li>
+		<li><a href="contact.asp">Contact</a></li>
+		<li><a href="about.asp">About</a></li>
+				<li><a href="about.asp">About</a></li>
+						<li><a href="about.asp">About</a></li>
+								<li><a href="about.asp">About</a></li>
+										<li><a href="about.asp">About</a></li>
+		<li><a href="about.asp">About</a></li>
+	</ul>
+@RenderBody()
+
+
+
+
+	@RenderSection("after_ul", required: false)
+</body>
+</html>
+
+
