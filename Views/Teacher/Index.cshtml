@@ -1,0 +1,19 @@
+﻿@model Teacher
+
+@{
+	var ralph = ViewData["second_key"] as Teacher;
+}
+
+<h1>The name of the teacher is: @Model.Name, @Model.Degree</h1>
+
+
+<h1>@ViewData["first_key"]</h1>
+
+
+<h1>The name of the teacher 2 is: @ralph.Name, @ralph.Degree</h1>
+
+
+
+<h1>@ViewBag.message</h1>
+
+<h1>The name of the teacher 3 is: @ViewBag.teacher3.Name, @ViewBag.teacher3.Degree</h1>

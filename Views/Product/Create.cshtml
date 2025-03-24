@@ -1,0 +1,31 @@
+﻿@model Product
+
+<h1>Create New Product</h1>
+
+<form asp-controller="Product" asp-action="Store" method="post">
+
+	<div asp-validation-summary="All" class="text-danger"> </div>
+
+	<div class="form-group">
+		<label asp-for="Name">Name</label>
+		<input id="Name" asp-for="Name" type="text" class="form-control" />
+		<span asp-validation-for="Name" class="text-danger"></span>
+	</div>
+
+		<div class="form-group">
+		<label asp-for="Description" >Description</label>
+		<textarea id="Description" asp-for="Description" type="text" class="form-control"> </textarea>
+		<span asp-validation-for="Description" class="text-danger"></span>
+
+	</div>
+
+		<div class="mt-1">
+			<input type="submit" class="btn btn-success" />
+			<a class="btn btn-danger" asp-controller="Product" asp-action="Index">Back</a>
+		</div>
+
+</form>
+
+@section Scripts{ 
+	<partial name="_ValidationScriptsPartial" />
+ }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TPUSJ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cc7e3cb33dab259091f1143b1fecf15dd0a866b")]
 [assembly: System.Reflection.AssemblyProductAttribute("TPUSJ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TPUSJ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
